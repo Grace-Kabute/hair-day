@@ -1,0 +1,152 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: ghostwhite;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+    
+    .container {
+        background-color: rgba(248, 227, 214, 0.901);
+    }
+    
+    .logo {
+        text-align: center;
+        margin-top: 2em;
+    }
+    
+    li,
+    .link {
+        color: white;
+        font-size: 1.3em;
+        text-decoration: none;
+        list-style: none;
+        padding: 1em 2em;
+        text-transform: uppercase;
+    }
+    
+    .link:hover,
+    .link:active {
+        color: blue;
+        transition: 1s;
+    }
+    
+    .navigation {
+        display: flex;
+        margin: 1em;
+        background-color: rgba(0, 0, 0, 0.413);
+        border-radius: 10px;
+    }
+    
+    p {
+        font-size: 1.5em;
+        width: 300px;
+        line-height: 1.7em;
+        margin-bottom: 1em;
+    }
+    
+    section {
+        margin: 2em;
+    }
+    
+    .promotion {
+        background: url(../images/jOXQp90cQzal0KfdHIM2eg_ffc47df1b7034d36a15dd95a39a4dae1_Hair-Day-logos/annie-spratt-DjUBz5MTicQ-unsplash.jpg);
+        background-position-x: 75%;
+        background-position-y: 25%;
+        min-height: 45vh;
+        min-width: 100vh;
+        object-fit: cover;
+        padding: 2em;
+        font-weight: bold;
+    }
+    
+    .promote>p {
+        color: black;
+        margin: auto;
+        width: 400px;
+        font-size: 1.3em;
+    }
+    
+    .image {
+        object-fit: cover;
+        padding: 1em;
+    }
+    
+    @keyframes effect {
+        0% {
+            color: red;
+        }
+        25% {
+            color: rgb(237, 49, 49);
+        }
+        50% {
+            color: purple;
+        }
+        100% {
+            color: blue;
+        }
+    }
+    
+    .hero {
+        text-transform: uppercase;
+        font-size: 5em;
+        margin-left: 2em;
+        animation: effect 2s linear infinite;
+        animation-direction: alternate;
+    }
+    
+    .wrap {
+        display: grid;
+        grid-template-areas: 'one' 'two' 'three' 'four';
+    }
+    
+    @media(min-width:500px) {
+        .wrap {
+            grid-template-areas: 'one one one' 'two three four'
+        }
+        .promotion:nth-child(1) {
+            grid-area: one;
+        }
+        .services:nth-child(2) {
+            grid-area: two;
+        }
+        .appointment:nth-child(3) {
+            grid-area: three;
+        }
+        .hours:nth-child(4) {
+            grid-area: four;
+        }
+    }
+    
+    section {
+        padding: 2em;
+        border-radius: 10px;
+        background: rgba(249, 203, 186, 0.823);
+    }
+    
+    footer {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 4em;
+    }
+    
+    button {
+        padding: 0em 1em;
+        border-radius: 20px;
+        background-color: rgba(238, 141, 233, 0.972);
+        font-size: 1.5em;
+        border: none;
+        margin-top: 1em;
+    }
+    
+   
