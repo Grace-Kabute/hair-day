@@ -206,7 +206,7 @@
         }
         li,
         .link {
-            color: black;
+            color: rgba(0, 0, 0, 0.1);
         }
         .image {
             width: 200px;
